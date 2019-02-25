@@ -36,7 +36,7 @@ server <- function(input, output) {
     
     # remember to check how the input looks, eg:
     # cat(input$columns)
-    # class(input$columns)
+    # cat(class(input$columns))
     
     # add link to input
     my_data[1:10, input$columns, drop = FALSE]

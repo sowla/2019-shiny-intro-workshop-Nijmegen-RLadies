@@ -49,7 +49,7 @@ server <- function(input, output, session) {
   output$plot <- renderPlot({
     
     hist(
-      # read current value of my_data by adding `()`
+      # read current value of my_data by adding `()` to my_data
       x = my_data()[[input$column]],
       main = paste("Histogram of", input$column),
       xlab = input$column
